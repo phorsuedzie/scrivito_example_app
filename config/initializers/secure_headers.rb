@@ -17,7 +17,7 @@ Rails.application.config.after_initialize do |app|
     unsafe_inline = %w('unsafe-inline')
 
     config.csp = {
-      default_src: allowed_sources,
+      default_src: data + allowed_sources,
       font_src: data + allowed_sources,
       img_src: data + allowed_sources,
       style_src: unsafe_inline + allowed_sources,
