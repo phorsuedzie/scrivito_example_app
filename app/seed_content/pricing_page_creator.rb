@@ -3,7 +3,7 @@ class PricingPageCreator < BaseSeedContentCreator
   def create
     puts("creating pricing page")
     Page.create({
-      _path: "/features/pricing",
+      _path: "#{seed_creator.sample_pages_path_prefix}/pricing",
       title: "Sample Pricing Page",
       tags: %w[section-widget card-widget call-to-action-widget column-widget],
       body: [
@@ -24,7 +24,7 @@ class PricingPageCreator < BaseSeedContentCreator
 
         SectionWidget.new({
           bg_color: "white",
-          bg_image: seed_creator.sample_image(6),
+          bg_image: seed_creator.img_orange_blue,
           padding_size: "medium",
           content: [
             create_columns([

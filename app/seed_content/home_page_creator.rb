@@ -57,7 +57,7 @@ class HomePageCreator < BaseSeedContentCreator
                     "ensure that the website visitor view is active.</p>"),
               ],
               [
-                create_image(seed_creator.sample_image(9)),
+                create_image(seed_creator.img_boats),
                 create_text(
                     "<p><b>Click the image</b> to exchange it or "\
                     "<b>drag one from your desktop</b> onto it.</p>"),

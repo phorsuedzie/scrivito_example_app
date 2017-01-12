@@ -1,10 +1,10 @@
-class FeaturesPagesCreator < BaseSeedContentCreator
+class WidgetsPagesCreator < BaseSeedContentCreator
 
   def create
-    puts("creating features pages")
+    puts("creating widget show case pages")
     Page.create({
-      _path: "/features",
-      title: "Sample Pages & Widgets",
+      _path: seed_creator.widgets_pages_path_prefix,
+      title: "Sample Widgets",
       child_order: [
         create_section_page,
         create_columns_page,
@@ -14,9 +14,6 @@ class FeaturesPagesCreator < BaseSeedContentCreator
         create_cards_page,
         create_call_to_action_page,
         create_maps_page,
-        seed_creator.gallery_page,
-        seed_creator.contact_page,
-        seed_creator.pricing_page,
       ],
     })
   end
@@ -29,7 +26,7 @@ class FeaturesPagesCreator < BaseSeedContentCreator
       body: [
         SectionWidget.new({
           bg_color: "dark",
-          bg_image: seed_creator.sample_image(13),
+          bg_image: seed_creator.img_mountain_lake,
           padding_size: "medium",
           content: [create_h3("Section with background image and medium padding")],
         }),
@@ -45,7 +42,7 @@ class FeaturesPagesCreator < BaseSeedContentCreator
         }),
         SectionWidget.new({
           bg_color: "dark",
-          bg_image: seed_creator.sample_image(11),
+          bg_image: seed_creator.img_aqua,
           padding_size: "large",
           content: [create_h3("Dark section with large padding")],
         }),
@@ -99,7 +96,7 @@ class FeaturesPagesCreator < BaseSeedContentCreator
       body: [
         SectionWidget.new({
           bg_color: "white",
-          bg_image: seed_creator.sample_image(12),
+          bg_image: seed_creator.img_city_skyline,
           padding_size: "small",
           content: [
             create_columns([
@@ -148,7 +145,7 @@ class FeaturesPagesCreator < BaseSeedContentCreator
                             "&quot;accordion&quot; style in order to "\
                             "create content that is "\
                             "shown only after the visitor clicked the title."),
-                        create_image(seed_creator.sample_image(9)),
+                        create_image(seed_creator.img_boats),
                         create_text(
                             "The content of the &quot;see more&quot; section can be "\
                             "filled with anything you like."),
@@ -188,11 +185,18 @@ class FeaturesPagesCreator < BaseSeedContentCreator
           content: [
             PanelGroupWidget.new({
               layout_type: "carousel",
-              panels: 1.upto(6).to_a.map do |i|
+              panels: [
+                ["Slide 1: Sunset", seed_creator.img_sunset],
+                ["Slide 2: City", seed_creator.img_city_1],
+                ["Slide 3: Sun", seed_creator.img_sun],
+                ["Silde 4: Football", seed_creator.img_football],
+                ["Slide 5: Meadow", seed_creator.img_yellow],
+                ["Slide 6: Mountain", seed_creator.img_orange_blue],
+              ].map do |title, image|
                 PanelWidget.new({
-                  title: "Slide #{i}",
+                  title: title,
                   content: [
-                    create_image(seed_creator.sample_image(i)),
+                    create_image(image),
                   ],
                 })
               end,
@@ -314,7 +318,7 @@ class FeaturesPagesCreator < BaseSeedContentCreator
               [
                 _card({
                   bg_color: "dark",
-                  bg_image: seed_creator.sample_image(3),
+                  bg_image: seed_creator.img_sun,
                   color: "default",
                   title: "Background Image",
                 }),
@@ -324,10 +328,10 @@ class FeaturesPagesCreator < BaseSeedContentCreator
               (%w[white light dark darker].map {|c| [_bg_card(bg_color: c)]}),
             ),
             create_columns([
-              seed_creator.sample_image(1),
-              seed_creator.sample_image(2),
-              seed_creator.sample_image(3),
-              seed_creator.sample_image(4),
+              seed_creator.img_sunset,
+              seed_creator.img_city_1,
+              seed_creator.img_sun,
+              seed_creator.img_football,
             ].map {|image_obj| [_bg_card(bg_color: "dark", bg_image: image_obj, title: "No Heading, Background Image")]}),
           ],
         })
@@ -445,7 +449,7 @@ class FeaturesPagesCreator < BaseSeedContentCreator
 
   def _create_feature_page(name:, body:, tags:)
     Page.create({
-      _path: "/features/#{name.underscore}",
+      _path: "#{seed_creator.widgets_pages_path_prefix}/#{name.underscore}",
       _permalink: name.dasherize,
       title: name.titleize,
       tags: tags,

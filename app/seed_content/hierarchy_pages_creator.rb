@@ -4,30 +4,45 @@ class HierarchyPagesCreator < BaseSeedContentCreator
     create_hierarchy_page("hierarchy", [
       create_hierarchy_page("hierarchy/1", [
         create_hierarchy_page("hierarchy/1/1", [
-          create_hierarchy_page("hierarchy/1/1/1", [
-            create_hierarchy_page("hierarchy/1/1/1/1"),
-            create_hierarchy_page("hierarchy/1/1/1/2"),
-            create_hierarchy_page("hierarchy/1/1/1/3"),
-            create_hierarchy_page("hierarchy/1/1/1/4"),
-          ]),
+          create_hierarchy_page("hierarchy/1/1/1"),
           create_hierarchy_page("hierarchy/1/1/2"),
           create_hierarchy_page("hierarchy/1/1/3"),
-          create_hierarchy_page("hierarchy/1/1/4"),
-          create_hierarchy_page("hierarchy/1/1/5"),
-          create_hierarchy_page("hierarchy/1/1/6"),
-          create_hierarchy_page("hierarchy/1/1/7"),
         ]),
-        create_hierarchy_page("hierarchy/1/2"),
-        create_hierarchy_page("hierarchy/1/3"),
-        create_hierarchy_page("hierarchy/1/4"),
-        create_hierarchy_page("hierarchy/1/5"),
-        create_hierarchy_page("hierarchy/1/6"),
-        create_hierarchy_page("hierarchy/1/7"),
-        create_hierarchy_page("hierarchy/1/8"),
-        create_hierarchy_page("hierarchy/1/9"),
+        create_hierarchy_page("hierarchy/1/2", [
+          create_hierarchy_page("hierarchy/1/2/1"),
+          create_hierarchy_page("hierarchy/1/2/2"),
+          create_hierarchy_page("hierarchy/1/2/3"),
+        ]),
+        create_hierarchy_page("hierarchy/1/3", [
+          create_hierarchy_page("hierarchy/1/3/1"),
+          create_hierarchy_page("hierarchy/1/3/2"),
+          create_hierarchy_page("hierarchy/1/3/3"),
+        ]),
       ]),
-      create_hierarchy_page("hierarchy/2"),
-      create_hierarchy_page("hierarchy/3"),
+      create_hierarchy_page("hierarchy/2", [
+        create_hierarchy_page("hierarchy/2/1", [
+          create_hierarchy_page("hierarchy/2/1/1"),
+          create_hierarchy_page("hierarchy/2/1/2"),
+        ]),
+        create_hierarchy_page("hierarchy/2/2", [
+          create_hierarchy_page("hierarchy/2/2/1"),
+          create_hierarchy_page("hierarchy/2/2/2"),
+        ]),
+        create_hierarchy_page("hierarchy/2/3", [
+          create_hierarchy_page("hierarchy/2/3/1"),
+          create_hierarchy_page("hierarchy/2/3/2"),
+        ]),
+      ]),
+      create_hierarchy_page("hierarchy/3", [
+        create_hierarchy_page("hierarchy/3/1", [
+          create_hierarchy_page("hierarchy/3/1/1"),
+          create_hierarchy_page("hierarchy/3/1/2"),
+        ]),
+        create_hierarchy_page("hierarchy/3/2", [
+          create_hierarchy_page("hierarchy/3/2/1"),
+          create_hierarchy_page("hierarchy/3/2/2"),
+        ]),
+      ]),
     ])
   end
 

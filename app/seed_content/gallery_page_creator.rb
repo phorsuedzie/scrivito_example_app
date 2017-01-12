@@ -3,7 +3,7 @@ class GalleryPageCreator < BaseSeedContentCreator
   def create
     puts("creating gallery page")
     Page.create({
-      _path: "/features/gallery",
+      _path: "#{seed_creator.sample_pages_path_prefix}/gallery",
       title: "Sample Gallery Page",
       tags: %w[section-widget card-widget column-widget],
       body: [
@@ -13,9 +13,9 @@ class GalleryPageCreator < BaseSeedContentCreator
           content: [
             create_h2("Dark Three-Column Gallery with Cards"),
             create_columns([
-              _panel_1("Gallery Item 1", seed_creator.sample_image(1)),
-              _panel_1("Gallery Item 2", seed_creator.sample_image(2)),
-              _panel_1("Gallery Item 3", seed_creator.sample_image(3)),
+              _panel_1("Gallery Item 1", seed_creator.img_sunset),
+              _panel_1("Gallery Item 2", seed_creator.img_city_1),
+              _panel_1("Gallery Item 3", seed_creator.img_sun),
             ]),
           ],
         }),
@@ -26,10 +26,10 @@ class GalleryPageCreator < BaseSeedContentCreator
           content: [
             create_h2_center("Darker Four-Column Gallery without Cards"),
             create_columns([
-              _panel_2("Gallery Item 1", seed_creator.sample_image(4)),
-              _panel_2("Gallery Item 2", seed_creator.sample_image(5)),
-              _panel_2("Gallery Item 3", seed_creator.sample_image(6)),
-              _panel_2("Gallery Item 4", seed_creator.sample_image(7)),
+              _panel_2("Gallery Item 1", seed_creator.img_football),
+              _panel_2("Gallery Item 2", seed_creator.img_yellow),
+              _panel_2("Gallery Item 3", seed_creator.img_orange_blue),
+              _panel_2("Gallery Item 4", seed_creator.img_city_2),
             ]),
           ],
         }),
@@ -46,7 +46,7 @@ class GalleryPageCreator < BaseSeedContentCreator
           content: [
             create_columns([
               [
-                create_image(seed_creator.sample_image(8)),
+                create_image(seed_creator.img_beach_night),
               ],
               [
                 create_h3("Gallery Item 1"),
@@ -73,7 +73,7 @@ class GalleryPageCreator < BaseSeedContentCreator
                     "warning", "Go to Pricing Page", seed_creator.pricing_page),
               ],
               [
-                create_image(seed_creator.sample_image(9)),
+                create_image(seed_creator.img_boats),
               ],
             ]),
           ],
@@ -84,7 +84,7 @@ class GalleryPageCreator < BaseSeedContentCreator
           content: [
             create_columns([
               [
-                create_image(seed_creator.sample_image(10)),
+                create_image(seed_creator.img_street),
               ],
               [
                 create_h3("Gallery Item 3"),

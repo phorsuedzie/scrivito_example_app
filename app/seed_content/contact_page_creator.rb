@@ -3,18 +3,16 @@ class ContactPageCreator < BaseSeedContentCreator
   def create
     puts("creating contact page")
     Page.create({
-      _path: "/features/contact",
+      _path: "#{seed_creator.sample_pages_path_prefix}/contact",
       title: "Sample Contact Page",
       tags: %w[section-widget maps-widget card-widget column-widget],
       body: [
         SectionWidget.new({
-          bg_image: seed_creator.sample_image(12),
+          bg_image: seed_creator.img_city_skyline,
           padding_size: "medium",
           content: [
             create_h1_center("Get in touch."),
-            SpaceWidget.new({
-              size: "medium",
-            }),
+            create_medium_space,
             create_columns([
               [
                 CardWidget.new({

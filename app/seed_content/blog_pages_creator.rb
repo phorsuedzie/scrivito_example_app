@@ -68,7 +68,7 @@ class BlogPagesCreator < BaseSeedContentCreator
     ].each_with_index do |config, index|
       create_blog_post(OpenStruct.new({
         i: index + 1,
-        image: seed_creator.sample_image(index + 1),
+        image: blog_image(index + 1),
         published_at: ((10 - index)^2).days.ago,
       }.merge(config)))
     end
@@ -118,6 +118,23 @@ class BlogPagesCreator < BaseSeedContentCreator
             "or to enrich your posts with images, for example.</p>"),
       ],
     })
+  end
+
+  private
+
+  def blog_image(i)
+    case i % 10
+    when 0 then seed_creator.img_sunset
+    when 1 then seed_creator.img_city_1
+    when 2 then seed_creator.img_sun
+    when 3 then seed_creator.img_football
+    when 4 then seed_creator.img_yellow
+    when 5 then seed_creator.img_orange_blue
+    when 6 then seed_creator.img_city_2
+    when 7 then seed_creator.img_beach_night
+    when 8 then seed_creator.img_boats
+    else seed_creator.img_street
+    end
   end
 
 end

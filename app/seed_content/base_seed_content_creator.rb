@@ -142,6 +142,14 @@ class BaseSeedContentCreator
     TextWidget.new(text: text, alignment: "right")
   end
 
+  def create_small_space
+    SpaceWidget.new( size: "small")
+  end
+
+  def create_medium_space
+    SpaceWidget.new(size: "medium")
+  end
+
   def create_large_space
     SpaceWidget.new(size: "large")
   end
