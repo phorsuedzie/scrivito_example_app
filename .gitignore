@@ -1,5 +1,7 @@
 /.bundle
 /log/*
+/tmp/*
 !/log/.keep
-/tmp
+!/tmp/.keep
 .env*
+.byebug_history
