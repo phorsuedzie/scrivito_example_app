@@ -50,41 +50,30 @@ class CampaignPageCreator < LandingPageCreator
                       title: "Best practices",
                       content: [
                         create_text(
-                            "<p>Accordions can be created by using a Panel Group "\
-                            "widget and applying the <strong>accordion</strong> "\
-                            "style to it. Lorem ipsum dolor sit amet, consectetur "\
-                            "adipisicing elit, sed do eiusmod tempor incididunt. "\
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "\
-                            "sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, "\
-                            "consectetur adipisicing elit, sed do eiusmod tempor "\
-                            "incididunt.</p><p>Lorem ipsum dolor sit amet, "\
-                            "consectetur adipisicing elit, sed do eiusmod tempor "\
-                            "incididunt.Lorem ipsum dolor sit amet, consectetur "\
-                            "adipisicing elit, sed do eiusmod tempor incididunt. "\
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "\
-                            "sed do eiusmod tempor incididunt.</p>"),
+                            "<p>This is a small sample campaign page that includes a "\
+                            "headline, a panel group displayed as an accordion, images, "\
+                            "a call to action, and standard text, arranged using column "\
+                            "widgets. All this has been placed on a card.</p>"),
                       ],
                     }),
                     PanelWidget.new({
-                      title: "More Headlines",
+                      title: "Getting creative",
                       content: [
                         create_text(
-                            "<p>Accordions can be created by using a Panel Group "\
-                            "widget and applying the <strong>accordion</strong> "\
-                            "style to it. Lorem ipsum dolor sit amet, consectetur "\
-                            "adipisicing elit, sed do eiusmod tempor incididunt.</p>"),
+                            "<p>This is a small sample campaign page that includes a "\
+                            "headline, a panel group displayed as an accordion, images, "\
+                            "a call to action, and standard text, arranged using column "\
+                            "widgets. All this has been placed on a card.</p>"),
                       ],
                     }),
                     PanelWidget.new({
                       title: "More Content here\n",
                       content: [
                         create_text(
-                            "<p>Accordions can be created by using a Panel Group "\
-                            "widget and applying the <strong>accordion</strong> "\
-                            "style to it.Lorem ipsum dolor sit amet, consectetur "\
-                            "adipisicing elit, sed do eiusmod tempor incididunt. "\
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, "\
-                            "sed do eiusmod tempor incididunt.</p>"),
+                            "<p>This is a small sample campaign page that includes a "\
+                            "headline, a panel group displayed as an accordion, images, "\
+                            "a call to action, and standard text, arranged using column "\
+                            "widgets. All this has been placed on a card.</p>"),
                       ],
                     }),
                   ],
@@ -98,16 +87,15 @@ class CampaignPageCreator < LandingPageCreator
             ColumnWidget.new({
               column1: [
                 create_text(
-                    "<h3>Latest Testimonials</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, "\
-                    "consectetur elit, sed do eiusmotempor in ut labore et dolore "\
-                    "magna aliqua. Ut enim ad minim veniam, quis nostrud Exercitation "\
-                    "ullamco laboris nisi ommodo consequat ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, sed do eiusmod tempor incididunt. "\
-                    "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmotempor "\
-                    "in ut labore et dolore magna aliqua. Ut enim ad minim veniam, "\
-                    "quis nostrud Exercitation ullamco laboris nisi ommodo consequat.</p>"),
+                    "<h3>Latest Testimonial</h3>"\
+                    "<p>Each time a working copy is published, Scrivito adds it "\
+                    "to your publishing history. It's the key to finding and "\
+                    "reactivating content that has meanwhile been altered or removed "\
+                    "from your website. If, for example, you need to access an earlier "\
+                    "version of a specific page, undelete a widget, or want to "\
+                    "completely reset your website content to an earlier state, the "\
+                    "publishing history simply lets you do it.</p>"\
+                    "<p>You can access the publishing history via the sidebar.</p>"),
               ],
               column2: [
                 create_image(seed_creator.img_portrait_1),

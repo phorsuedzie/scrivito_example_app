@@ -14,11 +14,9 @@ class PricingPageCreator < BaseSeedContentCreator
             create_h2_center("Sample Pricing Page"),
             create_text_center(
                 "<p>This page was created using Column, Card, Headline, Text "\
-                "and Call-To-Action widgets.</p>"\
-                "<p>Try to view it on different devices using the "\
-                "preview size selector on the right of "\
-                "the Scrivito panel and see that it's responsive "\
-                "indeed.</p>"),
+                "and Call-To-Action widgets.<br>"\
+                "You can test the responsiveness of this page and all others using the "\
+                "preview size selector available on the Scrivito sidebar to the right.</p>"),
           ],
         }),
 
@@ -38,7 +36,7 @@ class PricingPageCreator < BaseSeedContentCreator
                     create_text(
                         "<ul>"\
                         "<li>Unlimited widgets</li>"\
-                        "<li>1GB storage</li>"\
+                        "<li>1 GB storage</li>"\
                         "<li>No reports</li>"\
                         "<li>Ads</li>"\
                         "</ul>"),
@@ -56,8 +54,8 @@ class PricingPageCreator < BaseSeedContentCreator
                     create_text(
                         "<ul>"\
                         "<li>Unlimited widgets</li>"\
-                        "<li>10GB storage</li>"\
-                        "<li>10 reports each month</li>"\
+                        "<li>5 GB storage</li>"\
+                        "<li>10 reports per month</li>"\
                         "<li>No ads</li>"\
                         "</ul>"),
                     create_button_center("medium", "success", "Select Plus"),
@@ -74,8 +72,8 @@ class PricingPageCreator < BaseSeedContentCreator
                     create_text(
                         "<ul>"\
                         "<li>Unlimited widgets</li>"\
-                        "<li>50GB storage</li>"\
-                        "<li>50 reports each month</li>"\
+                        "<li>20 GB storage</li>"\
+                        "<li>50 reports per month</li>"\
                         "<li>No ads</li>"\
                         "</ul>"),
                     create_button_center("medium", "info", "Select Premium"),
@@ -93,7 +91,7 @@ class PricingPageCreator < BaseSeedContentCreator
                         "<ul>"\
                         "<li>Unlimited widgets</li>"\
                         "<li>Unlimited storage</li>"\
-                        "<li>Unlimited reports each month</li>"\
+                        "<li>Unlimited reports</li>"\
                         "<li>No ads</li>"\
                         "</ul>"),
                     create_button_center("medium", "warning", "Select Business"),

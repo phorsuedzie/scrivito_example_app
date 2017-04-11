@@ -24,7 +24,7 @@ class LandingPageCreator < BaseSeedContentCreator
       bg_image: seed_creator.img_gradient,
       padding_size: "medium",
       content: [
-        create_h1("We are your consulting company"),
+        create_h1("You are doing it right!"),
         create_small_space,
         ColumnWidget.new({
           column1: [
@@ -35,9 +35,9 @@ class LandingPageCreator < BaseSeedContentCreator
               column2: [
                 create_text(
                     "<h3>Fast Integration</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<p>Getting started is easy. Just "\
+                    "drop the Scrivito gem into your Rails app, "\
+                    "provide your API credentials, and you're done.</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -50,9 +50,10 @@ class LandingPageCreator < BaseSeedContentCreator
               column2: [
                 create_text(
                     "<h3>Easy Editing</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<p>Launch your app and immediately start editing content "\
+                    "in your browser. Add widgets, arrange them or add images "\
+                    "using drag and drop, format your text and experience the "\
+                    "ease of in-place editing.</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -64,10 +65,11 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<h3>Reliable Website</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<h3>Fast and Reliable Website</h3>"\
+                    "<p>Visitors tend to leave a website after four seconds at "\
+                    "most if loading times are slow. The Scrivito SDK is hooked "\
+                    "to a CDN, making your content instantly available all over "\
+                    "the world.</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -100,13 +102,13 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<p>Lorem ipsum dolor sit amet, consectetur elit, "\
-                    "sed do eiusmotempor in ut labore et dolore magna aliqua.</p>"\
-                    "<ul><li>Ut enim ad minim veniam, quis nostrud</li>"\
-                    "<li>Exercitation ullamco laboris nisi</li>"\
-                    "<li>Commodo consequat</li>"\
-                    "<li>Duis aute irure dolor in reprehenderit</li>"\
-                    "<li>Laudantium, totam rem aperiam</li></ul>"),
+                    "<p>This sample landing page consists of several sections "\
+                    "on the top level.</p>"\
+                    "<ul><li>Inside the sections, heavy use of columns is made.</li>"\
+                    "<li>There are even columns inside of columns!</li>"\
+                    "<li>Have you noticed the section background images?</li>"\
+                    "</ul><p>Resize your browser window or use size selector from "\
+                    "the sidebar to see how responsive the layout is.</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -120,10 +122,10 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<h3>Hello Headline</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<h3>Widgets</h3>"\
+                    "<p>This is a text widget. The headline is part of the text, "\
+                    "so it can be easily formatted. If you want to set an anchor or "\
+                    "change the alignment, use a headline widget instead.</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -135,10 +137,10 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<h3>Hello Headline</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<h3>Widgets</h3>"\
+                    "<p>This is a text widget. The headline is part of the text, "\
+                    "so it can be easily formatted. If you want to set an anchor or "\
+                    "change the alignment, use a headline widget instead.</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -150,10 +152,10 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<h3>Hello Headline</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<h3>Widgets</h3>"\
+                    "<p>This is a text widget. The headline is part of the text, "\
+                    "so it can be easily formatted. If you want to set an anchor or "\
+                    "change the alignment, use a headline widget instead.</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -178,18 +180,15 @@ class LandingPageCreator < BaseSeedContentCreator
         ColumnWidget.new({
           column1: [
             create_text(
-                "<h3>Latest Testimonials</h3>"\
-                "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, "\
-                "sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, "\
-                "consectetur elit, sed do eiusmotempor in ut labore et "\
-                "dolore magna aliqua. Ut enim ad minim veniam, "\
-                "quis nostrud Exercitation ullamco laboris nisi ommodo "\
-                "consequat ipsum dolor sit amet, consectetur adipisicing elit, "\
-                "sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, "\
-                "consectetur elit, sed do eiusmotempor in ut labore et "\
-                "dolore magna aliqua. Ut enim ad minim veniam, "\
-                "quis nostrud Exercitation ullamco laboris nisi ommodo "\
-                "consequat.</p>"),
+                "<h3>Latest Testimonial</h3>"\
+                "<p>Each time a working copy is published, Scrivito adds it "\
+                "to your publishing history. It's the key to finding and "\
+                "reactivating content that has meanwhile been altered or removed "\
+                "from your website. If, for example, you need to access an earlier "\
+                "version of a specific page, undelete a widget, or want to "\
+                "completely reset your website content to an earlier state, the "\
+                "publishing history simply lets you do it.</p>"\
+                "<p>You can access the publishing history via the sidebar.</p>"),
           ],
           column2: [
               create_image(seed_creator.img_portrait_1),
@@ -207,7 +206,7 @@ class LandingPageCreator < BaseSeedContentCreator
       padding_size: "medium",
       bg_color: bg_color,
       content: [
-        create_h2_center("Our Services"),
+        create_h2_center("Our Services — Your Benefits"),
         create_small_space,
         ColumnWidget.new({
           column1: [
@@ -218,9 +217,9 @@ class LandingPageCreator < BaseSeedContentCreator
               column2: [
                 create_text(
                     "<h3>Networking</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -233,9 +232,9 @@ class LandingPageCreator < BaseSeedContentCreator
               column2: [
                 create_text(
                     "<h3>Technology</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -247,10 +246,10 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<h3>Future proof</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<h3>Mobile support</h3>"\
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -264,10 +263,10 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<h3>Maps</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<h3>Global availability</h3>"\
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -279,10 +278,10 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<h3>Users</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<h3>User management</h3>"\
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -295,9 +294,9 @@ class LandingPageCreator < BaseSeedContentCreator
               column2: [
                 create_text(
                     "<h3>Easy setup</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -312,9 +311,9 @@ class LandingPageCreator < BaseSeedContentCreator
               column2: [
                 create_text(
                     "<h3>Fast delivery</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -326,10 +325,10 @@ class LandingPageCreator < BaseSeedContentCreator
               ],
               column2: [
                 create_text(
-                    "<h3>Easy to use</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<h3>Authoring</h3>"\
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -342,9 +341,9 @@ class LandingPageCreator < BaseSeedContentCreator
               column2: [
                 create_text(
                     "<h3>Working copies</h3>"\
-                    "<p>Lorem ipsum dolor sit amet, "\
-                    "consectetur adipisicing elit, "\
-                    "sed do eiusmod tempor incididunt.</p>"),
+                    "<p>This is really a must-have. "\
+                    "We wonder how you got along without this "\
+                    "for such a long time!</p>"),
               ],
               column1_width: "3",
               column2_width: "9",
@@ -372,16 +371,16 @@ class LandingPageCreator < BaseSeedContentCreator
               bg_color: "white",
               show_heading: "no",
               content: [
-                create_h3_center("Beginner"),
+                create_h3_center("Personal"),
                 create_h5_center("€5 / month"),
                 create_text(
                     "<ul>"\
-                    "<li>Limited widgets</li>"\
-                    "<li>1GB storage</li>"\
-                    "<li>1 report each month</li>"\
+                    "<li>Basic widgets</li>"\
+                    "<li>1 GB storage</li>"\
+                    "<li>1 report per month</li>"\
                     "<li>Small Ads</li>"\
                     "</ul>"),
-                create_button_center("medium", "primary", "Select Beginner"),
+                create_button_center("medium", "primary", "Select Personal"),
               ],
             }),
           ],
@@ -390,16 +389,16 @@ class LandingPageCreator < BaseSeedContentCreator
               bg_color: "white",
               show_heading: "no",
               content: [
-                create_h3_center("Advanced"),
+                create_h3_center("Small Business"),
                 create_h5_center("€20 / month"),
                 create_text(
                     "<ul>"\
                     "<li>Unlimited widgets</li>"\
-                    "<li>10GB storage</li>"\
-                    "<li>10 reports each month</li>"\
+                    "<li>10 GB storage</li>"\
+                    "<li>10 reports per month</li>"\
                     "<li>No ads</li>"\
                     "</ul>"),
-                create_button_center("medium", "success", "Select Advanced"),
+                create_button_center("medium", "success", "Select Small Business"),
               ],
             }),
           ],
@@ -408,16 +407,16 @@ class LandingPageCreator < BaseSeedContentCreator
               bg_color: "white",
               show_heading: "no",
               content: [
-                create_h3_center("Pro"),
+                create_h3_center("Enterprise"),
                 create_h5_center("€99 / month"),
                 create_text(
                     "<ul>"\
                     "<li>Unlimited widgets</li>"\
-                    "<li>100GB storage</li>"\
+                    "<li>100 GB storage</li>"\
                     "<li>100 reports each month</li>"\
                     "<li>No ads</li>"\
                     "</ul>"),
-                create_button_center("medium", "info", "Select Pro"),
+                create_button_center("medium", "info", "Select Enterprise"),
               ],
             }),
           ],
