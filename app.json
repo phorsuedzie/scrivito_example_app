@@ -24,6 +24,6 @@
     }
   },
   "scripts": {
-    "postdeploy": "bundle exec rails runner SeedContentCreator.create"
+    "postdeploy": "bin/generate_content"
   }
 }
