@@ -18,12 +18,12 @@ class BlogPagesCreator < BaseSeedContentCreator
       {
         title: "Scrivito lets you reuse previously published content",
         author: OpenStruct.new(name: "Phil O. Sophos", email: "philosophos@example.com"),
-        tags: %w[scrivito content managment system],
+        tags: %w[scrivito content management system],
       },
       {
         title: "A cloud CMS at last – CDN included",
         author: OpenStruct.new(name: "James Writer", email: "jameswriter@example.com"),
-        tags: %w[scrivito content managment cloud],
+        tags: %w[scrivito content management cloud],
       },
       {
         title: "Asset management made easy",
