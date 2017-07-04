@@ -1,4 +1,5 @@
-class Obj < Scrivito::BasicObj
+module Cms
+class Obj < Obj
 
   def self.valid_page_classes_beneath(parent_path)
     [Page, BlogPage, BlogPostPage]
@@ -38,4 +39,5 @@ class Obj < Scrivito::BasicObj
     ""
   end
 
+end
 end
